@@ -78,7 +78,7 @@ const EditForm = (props) => {
                 
                 <br/>
                
-                <button type="button" class="btn btn-outline-success">Submit</button>
+                <button type="submit" class="btn btn-outline-success">Submit</button>
 
             </form>
             <br/>
