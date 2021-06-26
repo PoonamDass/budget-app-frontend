@@ -22,7 +22,6 @@ function App() {
   const fetchTransactions = async() => {
     try {
       const response = await axios.get(`${API}/transactions`)
-      console.log(response.data)
       setTransactions(response.data)
     } catch (error) {
       console.log(error)
