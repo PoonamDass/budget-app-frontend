@@ -50,9 +50,10 @@ h1{
 .navbar{
   display: flex;
   justify-content: flex-end;
-  padding:1em
+  padding:1em;
 }
 
 a{
   text-decoration: none;
+  padding: 1em;
 }

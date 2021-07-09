@@ -16,9 +16,6 @@ const Index = ({transactions}) =>{
           </h2>
           <Transactions transactions={transactions} />
           
-         
-          
-    
         </div>
     )
 }
