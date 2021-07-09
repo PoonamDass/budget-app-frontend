@@ -1,12 +1,13 @@
 import {Link} from "react-router-dom"
 
-const Transaction = ({transaction, id}) => {
+const TransactionShow = ({transaction, id}) => {
     return (
 
        
                     <tr>
                         <td> <Link to={`/transactions/${id}`}>{transaction.name}</Link></td>
                         <td>${transaction.amount}</td>
+                        <td>{transaction.date}</td>
                     </tr>
              
            
@@ -16,4 +17,4 @@ const Transaction = ({transaction, id}) => {
     )
 }
 
-export default Transaction
+export default TransactionShow

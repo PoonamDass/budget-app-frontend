@@ -1,7 +1,7 @@
 import {useState} from "react"
 import {withRouter, useHistory} from "react-router-dom"
 
-const NewForm = ({addTransaction}) =>{
+const NewTransaction = ({addTransaction}) =>{
     const history = useHistory()
     const [transaction, setTransation] = useState({
         from:"",
@@ -23,6 +23,18 @@ const NewForm = ({addTransaction}) =>{
     return(
         <div class="container">
           <form onSubmit={handleSubmit}>
+          <div class="form-group ">
+                <label  htmlFor="date" class="col-form-label-lg">Date</label>
+                <input class="form-control"
+                  
+                    id="date"
+                    value={transaction.date}
+                    type="date"
+                    onChange={handleChange}
+                    required
+                    />
+                </div>
+
           <div class="form-group ">
                 <label  htmlFor="from" class="col-form-label-lg">Transaction Name </label>
                 <input class="form-control"
@@ -65,4 +77,4 @@ const NewForm = ({addTransaction}) =>{
     )
 
 }
-export default withRouter(NewForm)
+export default withRouter(NewTransaction)

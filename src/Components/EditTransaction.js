@@ -5,7 +5,7 @@ import axios from "axios"
 import {apiURL} from "../util/apiURL"
 const API = apiURL()
 
-const EditForm = (props) => {
+const EditTransaction = (props) => {
     let {id} = useParams()
     let history  = useHistory()
    
@@ -41,6 +41,19 @@ const EditForm = (props) => {
     return(
         <div class="container">
             <form  onSubmit={handleSubmit} >
+           
+            <div class="form-group ">
+                <label  htmlFor="date" class="col-form-label-lg">Date</label>
+                <input class="form-control"
+                  
+                    id="date"
+                    value={transaction.date}
+                    type="date"
+                    onChange={handleChange}
+                    required
+                    />
+                </div>
+                    
                 <div class="form-group ">
                 <label  htmlFor="from" class="col-form-label-lg">Transaction Name </label>
                 <input class="form-control"
@@ -90,4 +103,4 @@ const EditForm = (props) => {
     )
 }
 
-export default EditForm
+export default EditTransaction

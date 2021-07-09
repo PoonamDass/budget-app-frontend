@@ -1,10 +1,10 @@
-import NewForm from "../Components/NewForm"
+import NewTransaction from "../Components/NewTransaction"
 const New = ({addTransaction}) =>{
 
     return(
         <div>
             <h1>New Transaction</h1>
-            <NewForm addTransaction ={addTransaction} />
+            <NewTransaction addTransaction ={addTransaction} />
         </div>
 
     )

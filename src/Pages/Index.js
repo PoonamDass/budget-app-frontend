@@ -1,4 +1,4 @@
-import Transactions from "../Components/Transactions"
+import TransactionsIndex from "../Components/TransactionsIndex"
 const Index = ({transactions}) =>{
 
     
@@ -14,7 +14,7 @@ const Index = ({transactions}) =>{
 
          Total: ${Number(sum)}
           </h2>
-          <Transactions transactions={transactions} />
+          <TransactionsIndex transactions={transactions} />
           
         </div>
     )

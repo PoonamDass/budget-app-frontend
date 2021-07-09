@@ -11,6 +11,7 @@ const TransactionDetails = ({deleteTransaction, transaction, id}) => {
     return (
         <div>
             <h2>{transaction.name}</h2>
+            <p>{transaction.date}</p>
             <p>{transaction.from}</p>
             <p>{transaction.amount}</p>
             <Link to = {`/transactions`}>
